@@ -4,9 +4,15 @@ public class Client {
         String[] chocoList = {"White"};
         String[] fruitList = {"Banana","Strawberry"};
         String[] condimentList = {"IceCream","Almond"};
+
         Waitress waitress = new Waitress();
         Cook cook = new Cook();
-        SquareWaffleOrder waffleOrder = new SquareWaffleOrder(cook, chocoList, fruitList, condimentList);
+
+        WaffleOrder waffleOrder = new WaffleOrder(cook, "Square Waffle", chocoList, fruitList, condimentList);
         waitress.takeOrder(waffleOrder);
+
+        BeverageOrder beverageOrder = new BeverageOrder(cook, "Tea");
+        waitress.takeOrder(beverageOrder);
+
     }
 }

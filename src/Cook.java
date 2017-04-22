@@ -1,3 +1,4 @@
+import Beverage.Beverage;
 import Waffle.Waffle;
 import Waffle.WaffleDecorator.*;
 import Waffle.WaffleDecorator.NormalChocolate;
@@ -7,25 +8,41 @@ import Waffle.WaffleDecorator.WhiteChocolate;
 // Receiver
 public class Cook {
     public static String waffleType="";
+    public static String beverageType="";
     public static String[] chocoList = null;
     public static String[] fruitList = null;
     public static String[] condimentList = null;
     AbstractFactory factory;
     Waffle waffle;
+    Beverage beverage;
 
-    public Waffle getOrder(String factoryType){
+    public void getOrder(String factoryType){
         if(factoryType.equalsIgnoreCase("Waffle")){
+            System.out.println(waffleType + " siparişi alındı.");
+
             factory =  new WaffleFactory();
             waffle = factory.makeWaffle(waffleType);
+
+            waffle.prepareDough(waffleType);
+            waffle.cookDough(waffleType);
+            waffle.dishUp(waffleType);
             waffle = decorate(chocoList, fruitList, condimentList);
+
             System.out.println(waffle.getDescription() + " siparisi tamamlandı.");
             System.out.println("Cost: $" + waffle.cost());
+
         }
-        /*
-        else if(choice.equalsIgnoreCase("Beverage")){
-            return new BeverageFactory();
-        }*/
-        return waffle;
+        else if(factoryType.equalsIgnoreCase("Beverage")){
+            System.out.println(beverageType + " siparişi alındı.");
+
+            factory = new BeverageFactory();
+            beverage = factory.makeBeverage(beverageType);
+            beverage.prepareBeverage();
+
+            System.out.println(beverage.getDescription() + " siparisi tamamlandı.");
+            System.out.println("Cost: $" + beverage.cost());
+        }
+        System.out.println("");
     }
 
     public Waffle decorate(String[] chocoList, String[] fruitList, String[] condimentList){
@@ -64,7 +81,6 @@ public class Cook {
                 waffle = new IceCream(waffle);
             }
         }
-
         return waffle;
     }
 }
