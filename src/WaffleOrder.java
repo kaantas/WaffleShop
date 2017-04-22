@@ -10,12 +10,11 @@ public class SquareWaffleOrder implements Command{
     }
 
     @Override
-    public void orderUp() {
-        cook.waffleType = "Square Waffle";
+    public void orderUp(String order) {
+        cook.waffleType = order;
         cook.chocoList = this.chocoList;
         cook.fruitList = this.fruitList;
         cook.condimentList = this.condimentList;
         cook.getOrder("Waffle");
-
     }
 }
