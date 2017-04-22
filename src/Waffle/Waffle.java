@@ -12,14 +12,14 @@ public abstract class Waffle {
     }
 
     public void prepareDough(String type) {
-        System.out.println(type + " hamuru hazırlanıyor.");
+        System.out.println("Preparing "+ type + " dough");
     }
 
     public void cookDough(String type) {
-        System.out.println(type + " hamuru pişiriliyor.");
+        System.out.println("Cooking " + type + " dough");
     }
 
     public void dishUp(String type) {
-        System.out.println(type + " tabağa konuldu.");
+        System.out.println("Put " + type + " on the dish");
     }
 }

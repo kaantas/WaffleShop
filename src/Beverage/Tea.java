@@ -14,17 +14,17 @@ public class Tea extends HotBeverage{
 
     @Override
     public String getDescription() {
-        return "Çay";
+        return "Tea";
     }
 
     @Override
     public void brew() {
-        System.out.println("Çay hazırlanıyor.");
+        System.out.println("Steeping the tea");
     }
 
     @Override
     public void addCondiment() {
-        System.out.println("Limon ekleniyor.");
+        System.out.println("Adding lemon");
     }
 
     //hook
@@ -41,7 +41,7 @@ public class Tea extends HotBeverage{
 
     private String getUserInput(){
         String answer = null;
-        System.out.println("Limon ister misiniz? (y/n)");
+        System.out.println("Would you like lemon? (y/n)");
 
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         try {

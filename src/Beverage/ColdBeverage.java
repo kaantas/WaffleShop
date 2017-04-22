@@ -21,19 +21,19 @@ public abstract class ColdBeverage implements Beverage{
     }
 
     public void uncoverBeverage(){
-        System.out.println("İçeceğin şişesi açılıyor.");
+        System.out.println("Uncovering the bottle of drink");
     }
 
     public void pourInGlass(){
-        System.out.println("Bardağa konuluyor.");
+        System.out.println("Pouring into glass");
     }
 
     public void putPipet(){
-        System.out.println("Pipet konuluyor.");
+        System.out.println("Put pipet in glass");
     }
 
     public void addIce(){
-        System.out.println("Buz konuluyor.");
+        System.out.println("Adding ice");
     }
 
     //hook
@@ -49,7 +49,7 @@ public abstract class ColdBeverage implements Beverage{
 
     private String getUserInput(){
         String answer = null;
-        System.out.println("Buz ister misiniz? (y/n)");
+        System.out.println("Would you like ice? (y/n)");
 
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         try {

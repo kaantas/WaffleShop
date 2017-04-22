@@ -17,13 +17,13 @@ public abstract class HotBeverage implements Beverage {
     }
 
     public void boilWater(){
-        System.out.println("Su kaynatılıyor.");
+        System.out.println("Boiling water");
     }
 
     public abstract void brew();
 
     public void pourInCup(){
-        System.out.println("Bardağa konuluyor.");
+        System.out.println("Pouring into cup");
     }
 
     public abstract void addCondiment();

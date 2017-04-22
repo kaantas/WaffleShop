@@ -18,7 +18,7 @@ public class Cook {
 
     public void getOrder(String factoryType){
         if(factoryType.equalsIgnoreCase("Waffle")){
-            System.out.println(waffleType + " siparişi alındı.");
+            System.out.println(waffleType + " order received.");
 
             factory =  new WaffleFactory();
             waffle = factory.makeWaffle(waffleType);
@@ -28,18 +28,18 @@ public class Cook {
             waffle.dishUp(waffleType);
             waffle = decorate(chocoList, fruitList, condimentList);
 
-            System.out.println(waffle.getDescription() + " siparisi tamamlandı.");
+            System.out.println(waffle.getDescription() + " order completed.");
             System.out.println("Cost: $" + waffle.cost());
 
         }
         else if(factoryType.equalsIgnoreCase("Beverage")){
-            System.out.println(beverageType + " siparişi alındı.");
+            System.out.println(beverageType + " order received.");
 
             factory = new BeverageFactory();
             beverage = factory.makeBeverage(beverageType);
             beverage.prepareBeverage();
 
-            System.out.println(beverage.getDescription() + " siparisi tamamlandı.");
+            System.out.println(beverage.getDescription() + " order completed.");
             System.out.println("Cost: $" + beverage.cost());
         }
         System.out.println("");
