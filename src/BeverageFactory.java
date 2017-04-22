@@ -1,8 +1,7 @@
 import Beverage.*;
-import Waffle.*;
 
-public class BeverageFactory extends AbstractFactory{
-    @Override
+public class BeverageFactory {
+
     public Beverage makeBeverage(String beverageType) {
         if (beverageType.equals(null)){
             return null;
@@ -28,8 +27,4 @@ public class BeverageFactory extends AbstractFactory{
         return null;
     }
 
-    @Override
-    public Waffle makeWaffle(String waffleType) {
-        return null;
-    }
 }

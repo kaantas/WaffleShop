@@ -44,7 +44,7 @@ public class Client {
                         break;
                     } else if (answer.equals("2")) {
                         waffleType = "Circle Waffle";
-                        System.out.println("*** Circular Waffle is chosen..");
+                        System.out.println("*** Circular Waffle is chosen.");
                         break;
                     } else {
                         continue;
@@ -63,10 +63,10 @@ public class Client {
                     int value = scan.nextInt();
                     if (value == 1) {
                         chocoList.add("White");
-                        System.out.println("*** White Chocolate is chosen..");
+                        System.out.println("*** White Chocolate is chosen.");
                     } else if (value == 2) {
                         chocoList.add("Normal");
-                        System.out.println("*** Nutella is chosen..");
+                        System.out.println("*** Nutella is chosen.");
                     } else break;
                 }
                 System.out.println("The selection of chocolates is completed.");
@@ -82,13 +82,13 @@ public class Client {
                     int value = scan2.nextInt();
                     if (value == 1) {
                         fruitList.add("Banana");
-                        System.out.println("*** Banana is chosen..");
+                        System.out.println("*** Banana is chosen.");
                     } else if (value == 2) {
                         fruitList.add("Strawberry");
-                        System.out.println("*** Strawberry is chosen..");
+                        System.out.println("*** Strawberry is chosen.");
                     } else if (value == 3) {
                         fruitList.add("Kiwi");
-                        System.out.println("*** Kiwi is chosen..");
+                        System.out.println("*** Kiwi is chosen.");
                     } else break;
                 }
                 System.out.println("The selection of fruits is completed.");
@@ -104,13 +104,13 @@ public class Client {
                     int value = scan3.nextInt();
                     if (value == 1) {
                         condimentList.add("Ice Cream");
-                        System.out.println("*** Ice Cream is chosen..");
+                        System.out.println("*** Ice Cream is chosen.");
                     } else if (value == 2) {
                         fruitList.add("Coconut");
-                        System.out.println("*** Coconut is chosen..");
+                        System.out.println("*** Coconut is chosen.");
                     } else if (value == 3) {
                         fruitList.add("Almond");
-                        System.out.println("*** Almond is chosen..");
+                        System.out.println("*** Almond is chosen.");
                     } else break;
                 }
                 System.out.println("The selection of condiments is completed.");
@@ -144,27 +144,27 @@ public class Client {
                     int drink = scanBeverage.nextInt();
                     if(drink==1){
                         beverageType="Tea";
-                        System.out.println("*** Tea is chosen..");
+                        System.out.println("*** Tea is chosen.");
                     }
                     else if(drink==2){
                         beverageType="Coffee";
-                        System.out.println("*** Coffee is chosen..");
+                        System.out.println("*** Coffee is chosen.");
                     }
                     else if(drink==3){
                         beverageType="Cola";
-                        System.out.println("*** Cola is chosen..");
+                        System.out.println("*** Cola is chosen.");
                     }
                     else if(drink==4){
                         beverageType="Ice Tea";
-                        System.out.println("*** Ice Tea is chosen..");
+                        System.out.println("*** Ice Tea is chosen.");
                     }
                     else if(drink==5){
                         beverageType="Fanta";
-                        System.out.println("*** Fanta is chosen..");
+                        System.out.println("*** Fanta is chosen.");
                     }
                     else if(drink==6){
                         beverageType="Sprite";
-                        System.out.println("*** Sprite is chosen..");
+                        System.out.println("*** Sprite is chosen.");
                     }
                     else{
                         break;

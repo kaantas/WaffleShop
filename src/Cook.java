@@ -12,15 +12,13 @@ public class Cook {
     public static String[] chocoList = null;
     public static String[] fruitList = null;
     public static String[] condimentList = null;
-    AbstractFactory factory;
     Waffle waffle;
     Beverage beverage;
-
     public void getOrder(String factoryType){
         if(factoryType.equalsIgnoreCase("Waffle")){
             System.out.println(waffleType + " order received.");
 
-            factory =  new WaffleFactory();
+            WaffleFactory factory =  new WaffleFactory();
             waffle = factory.makeWaffle(waffleType);
 
             waffle.prepareDough(waffleType);
@@ -35,7 +33,7 @@ public class Cook {
         else if(factoryType.equalsIgnoreCase("Beverage")){
             System.out.println(beverageType + " order received.");
 
-            factory = new BeverageFactory();
+            BeverageFactory factory = new BeverageFactory();
             beverage = factory.makeBeverage(beverageType);
             beverage.prepareBeverage();
 
