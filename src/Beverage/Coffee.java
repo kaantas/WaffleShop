@@ -41,7 +41,7 @@ public class Coffee extends HotBeverage{
 
     private String getUserInput(){
         String answer = null;
-        System.out.println("Would you like milk? (y/n)");
+        System.out.println("Would you like milk? --- 1.5$ (y/n)");
 
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         try {

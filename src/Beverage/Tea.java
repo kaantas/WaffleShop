@@ -41,7 +41,7 @@ public class Tea extends HotBeverage{
 
     private String getUserInput(){
         String answer = null;
-        System.out.println("Would you like lemon? (y/n)");
+        System.out.println("Would you like lemon? --- 0.5$ (y/n)");
 
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         try {

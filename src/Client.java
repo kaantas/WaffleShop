@@ -28,8 +28,8 @@ public class Client {
 
                 while (true) {
                     System.out.println("Which waffle do you want?");
-                    System.out.println("(1) Square Waffle");
-                    System.out.println("(2) Circular Waffle");
+                    System.out.println("(1) Square Waffle --- 5.0$");
+                    System.out.println("(2) Circular Waffle --- 4.0$");
 
                     BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
                     try {
@@ -56,8 +56,8 @@ public class Client {
                 Scanner scan = new Scanner(System.in);
                 for (int i = 0; i < 2; i++) {
                     System.out.println("-------------------- Chocolate Types --------------------");
-                    System.out.println("(1) White Chocolate");
-                    System.out.println("(2) Nutella");
+                    System.out.println("(1) White Chocolate --- 1.5$");
+                    System.out.println("(2) Nutella --- 1.25$");
                     System.out.println("(Other) I finished the chocolate selection.");
 
                     int value = scan.nextInt();
@@ -75,9 +75,9 @@ public class Client {
                 Scanner scan2 = new Scanner(System.in);
                 for (int i = 0; i < 3; i++) {
                     System.out.println("-------------------- Fruit Types --------------------");
-                    System.out.println("(1) Banana");
-                    System.out.println("(2) Strawberry");
-                    System.out.println("(3) Kiwi");
+                    System.out.println("(1) Banana --- 0.75$");
+                    System.out.println("(2) Strawberry --- 0.65$");
+                    System.out.println("(3) Kiwi --- 0.85$");
                     System.out.println("(Other) I finished the fruit selection.");
                     int value = scan2.nextInt();
                     if (value == 1) {
@@ -97,10 +97,10 @@ public class Client {
                 Scanner scan3 = new Scanner(System.in);
                 for (int i = 0; i < 3; i++) {
                     System.out.println("-------------------- Condiment Types --------------------");
-                    System.out.println("(1) Ice Cream");
-                    System.out.println("(2) Coconut");
-                    System.out.println("(3) Almond");
-                    System.out.println("(Other) I finished the codniment selection.");
+                    System.out.println("(1) Ice Cream --- 2.5$");
+                    System.out.println("(2) Coconut --- 0.1$");
+                    System.out.println("(3) Almond --- 0.35$");
+                    System.out.println("(Other) I finished the condiment selection.");
                     int value = scan3.nextInt();
                     if (value == 1) {
                         condimentList.add("Ice Cream");
@@ -134,12 +134,12 @@ public class Client {
                 System.out.println("-------------------- DRINKS --------------------");
                 for (int i = 0; i < 1; i++) {
                     System.out.println("-------------------- Drink Types --------------------");
-                    System.out.println("(1) Tea");
-                    System.out.println("(2) Coffee");
-                    System.out.println("(3) Cola");
-                    System.out.println("(4) Ice Tea");
-                    System.out.println("(5) Fanta");
-                    System.out.println("(6) Sprite");
+                    System.out.println("(1) Tea --- 2.5$");
+                    System.out.println("(2) Coffee --- 5.5$");
+                    System.out.println("(3) Cola --- 4.0$");
+                    System.out.println("(4) Ice Tea --- 4.5$");
+                    System.out.println("(5) Fanta --- 4.0$");
+                    System.out.println("(6) Sprite --- 4.0$");
                     System.out.println("(Other) I finished the drink selection.");
                     int drink = scanBeverage.nextInt();
                     if(drink==1){
@@ -180,7 +180,6 @@ public class Client {
             else{
                 System.out.println("-------------------------------------------------------------------------------");
                 System.out.println("BON APPETIT");
-                System.out.println("");
                 break;
             }
         }
