@@ -14,7 +14,6 @@ Finally, Beverage Factory is responsible for hot and cold beverages creation and
 
 ## 3.Class Diagram
 ![general](https://cloud.githubusercontent.com/assets/21054424/25312908/20adf99a-282d-11e7-843d-fed5350c1111.PNG)
-Class
 
 
 
